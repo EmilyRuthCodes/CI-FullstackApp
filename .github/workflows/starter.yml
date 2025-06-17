@@ -12,15 +12,15 @@ on:
 #Use a matrix strategy to use Node.js versions 16.x and 18.x
 jobs:
   build:
-      runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    runs-on: ubuntu-latest
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js 
-        uses: actions/setup-node@v3
-        with:
-          node-version: latest
+    - name: Set up Node.js 
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
 
     runs-on: ubuntu-latest
 
